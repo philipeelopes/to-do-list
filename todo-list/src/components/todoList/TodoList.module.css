@@ -1,0 +1,11 @@
+.todoList{
+    list-style: none;
+    padding: 0;
+}
+
+.vazio{
+    text-align: center;
+    color: #2e2e2e;
+    margin-top: 20px;
+    font-size: 2rem;
+}

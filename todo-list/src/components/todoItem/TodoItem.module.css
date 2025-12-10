@@ -1,0 +1,35 @@
+.todoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f7f7f7;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.todoItem:hover{
+  transform: scale(1.01);
+  transition: all 0.3s ease;
+}
+
+ .feito {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.btnDelete {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.btnDelete:hover {
+  background: darkred;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}

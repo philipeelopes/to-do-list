@@ -1,8 +1,8 @@
 import { useState, useEffect, use } from "react";
 
-import Header from "./components/Header";
-import TodoForm from "./components/TodoForm";
-import TodoList from "./components/TodoList";
+import Header from "./components/header/Header";
+import TodoForm from "./components/todoForm/TodoForm";
+import TodoList from "./components/todoList/TodoList";
 
 import "./App.css";
 
@@ -16,7 +16,7 @@ export default function App(){
      // Salva as tarefas sempre que mudarem
      useEffect(() => {
       localStorage.setItem("todos", JSON.stringify(todos));
-     }) [todos];
+     }, [todos]);
 
     function adicionarTarefa(texto){
         const nova = {
@@ -41,7 +41,7 @@ export default function App(){
 
       return(
         <div className="container">
-          <header/>
+          <Header />
 
           <TodoForm onAdd={adicionarTarefa}/>
 

@@ -1,3 +1,5 @@
+import Styles from "./TodoForm.module.css";
+
 import { useState } from "react";
 
 export default function TodoForm( {onAdd}){
@@ -13,11 +15,12 @@ export default function TodoForm( {onAdd}){
     };
 
     return(
-        <form className="todo-form" onSubmit={handleSubmit}>
+        <form className={Styles.todoForm} onSubmit={handleSubmit}>
             <input type="text"
             placeholder="Digite uma tarefa..."
             value={text}
-            onChange={(e) => setText(e.target.value)} />
+            onChange={(e) => setText(e.target.value)} 
+            />
             <button type="submit">Adicionar</button>
         </form>
 

@@ -1,9 +1,11 @@
-import TodoItem from "./TodoItem";
+import Styles from "./TodoList.module.css";
+
+import TodoItem from "../todoItem/TodoItem";
 
 export default function TodoList({ todos, onToggle, onDelete }) {
     return(
-        <ul className="todo-list">
-            {todos.length === 0 && <p className="vazio">Nenhuma tarefa adicionada</p>}
+        <ul className={Styles.todoList}>
+            {todos.length === 0 && <p className={Styles.vazio}>Nenhuma tarefa adicionada</p>}
 
             {todos.map((todo) =>(
                 <TodoItem
