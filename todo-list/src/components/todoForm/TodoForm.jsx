@@ -21,7 +21,7 @@ export default function TodoForm( {onAdd}){
             value={text}
             onChange={(e) => setText(e.target.value)} 
             />
-            <button type="submit">Adicionar</button>
+            <button className={Styles.btnAdicionar} type="submit">Adicionar</button>
         </form>
 
     );
