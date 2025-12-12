@@ -9,13 +9,21 @@ import NovaTarefa from "./pages/NovaTarefa";
 export default function App() {
   return (
     <Router>
-      <Menu />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/tarefas" element={<Tarefas />} />
-        <Route path="/nova-tarefa" element={<NovaTarefa />} />
-      </Routes>
+      <div className="appContainer">
+        <Menu />
+
+        <main className="pageContainer">
+          <Routes cla>
+            <Route path="/" element={<Home />} />
+            <Route path="/tarefas" element={<Tarefas />} />
+            <Route path="/nova-tarefa" element={<NovaTarefa />} />
+          </Routes>
+
+        </main>
+
+      </div>
+
     </Router>
   );
 }
