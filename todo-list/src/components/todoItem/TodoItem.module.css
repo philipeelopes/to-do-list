@@ -16,6 +16,7 @@
  .feito {
   text-decoration: line-through;
   opacity: 0.6;
+  
 }
 
 .btnDelete {
@@ -32,4 +33,16 @@
   background: darkred;
   transform: scale(1.1);
   transition: all 0.3s ease;
+}
+
+
+
+.label{
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.checkbox{
+  cursor: pointer;
 }

@@ -39,7 +39,7 @@ export default function Tarefas() {
         <div className="container">
             <TodoList todos={todos} onDelete={deletarTarefa} onToggle={alterarTarefa} />
 
-             <BotaoExcluirTudo onClear={limparTudo} disabled={todos.length === 0} />
+             <BotaoExcluirTudo   onClear={limparTudo} disabled={todos.length === 0} />
         </div>
       )
 

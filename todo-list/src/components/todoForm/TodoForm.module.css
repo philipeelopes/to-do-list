@@ -20,7 +20,7 @@ input:focus{
 input:hover{
     transform: scale(1.01);
     transition: all 0.3s ease;
-    
+     
 }
 
 .todoForm .btnAdicionar{

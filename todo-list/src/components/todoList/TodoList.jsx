@@ -6,7 +6,7 @@ import TodoItem from "../todoItem/TodoItem";
 
 export default function TodoList({ todos, onToggle, onDelete }) {
     return(
-        <ul className={Styles.todoList}>
+        <ul className={`Styles.todoList ${Styles.listaScroll}`}>
             {todos.length === 0 && <p className={Styles.vazio}>Nenhuma tarefa adicionada</p>}
 
             {todos.map((todo) =>(

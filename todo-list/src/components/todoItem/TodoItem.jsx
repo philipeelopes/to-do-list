@@ -3,8 +3,8 @@ import Styles from "./TodoItem.module.css";
 export default function TodoItem({ todo, onToggle, onDelete }) {
  return (
     <li className={Styles.todoItem}>
-        <label>
-            <input type="checkbox"
+        <label className={Styles.label}>
+            <input className={Styles.checkbox} type="checkbox"
             checked={todo.completa}
             onChange={() => onToggle(todo.id)} 
             />
