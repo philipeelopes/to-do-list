@@ -9,15 +9,16 @@
 
 .vazio{
     text-align: center;
-    color: #2e2e2e;
+    color: #000000;
     margin-top: 20px;
     font-size: 2rem;
-
-
 }
 
+
+
+
 .listaScroll {
-  max-height: 400px;
+  max-height: 500px;
   overflow-y: auto;
   overflow-x: hidden;
   margin: 10px;
@@ -25,7 +26,8 @@
 
 /* largura */
 .listaScroll::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
+  
 }
 
 /* fundo */
@@ -38,11 +40,13 @@
   background-color: #c1c1c1;
   border-radius: 20px;
   transition: background-color 0.3s;
+ 
 }
 
 /* hover */
 .listaScroll::-webkit-scrollbar-thumb:hover {
   background-color: #999;
+  
 }
 
 

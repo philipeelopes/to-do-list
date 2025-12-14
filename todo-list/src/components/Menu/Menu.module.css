@@ -1,33 +1,33 @@
 .menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
 
-    background: #f3f3f3;
-    padding: 20px;
-     border-bottom: 1px solid #6c63ff;
-     box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);  
-  
+  background: #f3f3f3;
+  padding: 20px;
+  border: 1px solid #6c63ff;
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
 
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 
 }
 
-.menu a{
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: bold;
+.menu a {
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: bold;
 
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.24);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.24);
 
-    color: #333;
-    padding: 10px 15px;
-    transition: all 0.3s ease;
-    transition: color 0.2 ease, background 0.2 ease;
-    border-radius: 8px;
+  color: #333;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  transition: color 0.2 ease, background 0.2 ease;
+  border-radius: 8px;
 }
 
 .menu a:hover {
@@ -46,20 +46,20 @@
 
 
 
-.buttonDark{
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: bold;
+.buttonDark {
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: bold;
 
-    transition: color 0.2 ease, background 0.2 ease;
+  transition: color 0.2 ease, background 0.2 ease;
 
-    color: #ffffff;
-    background-color: #333;
-    padding: 10px 15px;
-    transition: all 0.3s ease;
-    border-radius: 8px;
+  color: #ffffff;
+  background-color: #333;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  border-radius: 8px;
 
-    
+
 }
 
 .buttonDark:hover {
@@ -73,8 +73,5 @@
   background: #6c63ff;
   color: white;
 }
-
-
-
 
 

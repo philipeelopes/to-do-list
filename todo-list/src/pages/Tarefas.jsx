@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import TodoList from "../components/todoList/TodoList";
 import BotaoExcluirTudo from "../components/botaoExcluirTudo/BotaoExcluirTudo";
 
+import Styles from "./Tarefas.module.css"
 
 
 export default function Tarefas() {
@@ -35,13 +36,34 @@ export default function Tarefas() {
 
       
 
-      return(
-        <div className="container">
-            <TodoList todos={todos} onDelete={deletarTarefa} onToggle={alterarTarefa} />
+   return (
+  <div className="container">
 
-             <BotaoExcluirTudo   onClear={limparTudo} disabled={todos.length === 0} />
-        </div>
-      )
+    {/* ÁREA QUE VAI PARA O PDF */}
+    <div className="listaPDF">
+      <TodoList
+        todos={todos}
+        onDelete={deletarTarefa}
+        onToggle={alterarTarefa}
+      />
+    </div>
+
+    <BotaoExcluirTudo
+      onClear={limparTudo}
+      disabled={todos.length === 0}
+    />
+
+    <button className={Styles.buttonPdf} onClick={() => window.print()}
+    disabled={todos.length === 0}
+    
+   
+    >
+      Baixar lista em PDF
+    </button>
+
+  </div>
+);
+
 
 
 

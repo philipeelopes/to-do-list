@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Styles from "./Menu.module.css";
 
 export default function Menu() {
+     const isDark = document.body.classList.contains("dark");
     return (
         <nav className={Styles.menu}>
             <Link to="/">Home</Link>

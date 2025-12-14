@@ -1,2 +1,15 @@
 
+.buttonPdf{
+    cursor: pointer;
+   padding: 5px;
+    margin: 10px;
+   border-radius: 6px;
+   transition: 0.3s ease ;
+   
+}
 
+.buttonPdf:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease ;
+    background-color: rgb(199, 199, 199);
+}

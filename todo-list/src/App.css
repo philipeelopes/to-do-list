@@ -65,27 +65,66 @@ body{
     
 }
 
+@media print {
+  body * {
+    visibility: hidden;
+    
+  }
+
+  .listaPDF,
+  .listaPDF * {
+    visibility: visible;
+    
+  }
+
+  .listaPDF {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  button {
+    display: none;
+  }
+}
+
+
+
+
 body.dark{
   background: #363636;
-  color: rgb(41, 41, 41);
+  color: rgb(22, 22, 22);
   
 }
 
 body.dark .container,
 body.dark .home{
-  background: #2b2929;
-  color: rgb(31, 31, 31);
+  background: #2b2b2b;
+  color: rgb(37, 37, 37);
+ 
 }
 
 body.dark a{
-  color: #272727;
+  color: #eeeeee;
+  background-color: #353434;
   
 }
+
+body.dark a:hover{
+  background: #1d1d1d;
+  color: white;
+}
+
 
 body.dark .appContainer{
   background: #141414;
  
 }
+
+
+
+  
 
 
   
